@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.img-top{
+    width: 100vw;
+    position: relative;
+
+    img{
+        width: 100vw;
+        height: 20vh;
+        object-fit: fill;
+    }
+}
+.titule {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 10vh;
+}
+.Login {
+  display: grid;
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  position: relative;
+  background-color: aqua;
+}
+.Login h2 {
+  text-align: center;
+}
+.Login .input {
+  width: 200px;
+  height: 30px;
+  gap: 1px;
+  position: relative;
+  top: 1vh;
+}
