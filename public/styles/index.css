@@ -9,9 +9,10 @@
     position: relative;
 
     img{
-        width: 100vw;
+        width: 20vw;
         height: 20vh;
         object-fit: fill;
+
     }
 }
 .titule {
@@ -21,13 +22,17 @@
   top: 10vh;
 }
 .Login {
-  display: grid;
   border: 1px solid black;
   width: 300px;
   height: 300px;
   justify-content: center;
   position: relative;
-  background-color: aqua;
+  background-color:burlywood;
+  margin: 3% 0 0 37%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 2%;
 }
 .Login h2 {
   text-align: center;
@@ -35,7 +40,5 @@
 .Login .input {
   width: 200px;
   height: 30px;
-  gap: 1px;
-  position: relative;
-  top: 1vh;
+  
 }

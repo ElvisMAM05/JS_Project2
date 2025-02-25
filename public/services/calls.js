@@ -23,13 +23,12 @@ export { getUsers };
 
 //////////LLAMADO POST//////////
 
-async function postUsers(nombre,apellido,edad) {
+async function postUsers(correo, contraseña) {
     try {
-     
+    
         const userData = { 
-            nombre,
-            apellido,
-            edad
+            correo,
+            contraseña,
         
         };
 
@@ -61,7 +60,7 @@ export{postUsers}
 async function updateUsers(nombre,apellido,edad,id) 
 {
     try {
-     
+
         const userData = { 
             nombre, 
             apellido,
@@ -81,7 +80,7 @@ async function updateUsers(nombre,apellido,edad,id)
             body: JSON.stringify(userData)
         });
 
-     
+    
         return await response.json();
     } catch (error) {
         console.error('Error update user:', error);
