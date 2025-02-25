@@ -1,3 +1,26 @@
 {
-    "user":[]
+  "users": [
+    {
+      "id": "a6ff",
+      "user_Name": "elvis",
+      "password": "123",
+      "tipoUsuario": "admin"
+    },
+    {
+      "id": "1af6",
+      "user_Name": "Manuel",
+      "password": "1234",
+      "tipoUsuario": "estud"
+    },
+    {
+      "id": "135b",
+      "user_Name": "Paquita",
+      "password": "1234",
+      "tipoUsuario": "estud"
+    }
+  ],
+  "pc":[
+    
+  ]
 }
+

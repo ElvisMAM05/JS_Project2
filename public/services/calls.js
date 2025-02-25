@@ -1,6 +1,6 @@
 async function getUsers() {
     try {
-        const response = await fetch('http://localhost:3000/users', {
+        const response = await fetch('http://localhost:3001/users', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -23,29 +23,18 @@ export { getUsers };
 
 //////////LLAMADO POST//////////
 
-async function postUsers(correo, contraseña) {
+async function postUsers(obj,endpoint) {
     try {
-    
-        const userData = { 
-            correo,
-            contraseña,
-        
-        };
-
-
-
-        const response = await fetch("http://localhost:3000/users", {
+        const response = await fetch(`http://localhost:3001/${endpoint}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(userData)
+            body: JSON.stringify(obj)
         });
-
-     
-        return await response.json();
-
-        
+        const data = await response.json();
+        console.log(data);
+        return data
     } catch (error) {
         console.error('Error posting user:', error);
         throw error;
@@ -57,14 +46,13 @@ export{postUsers}
 //////////////LLAMADO UPDATE/////////////
 
 
-async function updateUsers(nombre,apellido,edad,id) 
+async function updateUsers(password, user_Name) 
 {
     try {
 
         const userData = { 
-            nombre, 
-            apellido,
-            edad
+            password,
+            user_Name
         
         };
 
@@ -72,7 +60,7 @@ async function updateUsers(nombre,apellido,edad,id)
         
 
 
-        const response = await fetch("http://localhost:3000/users/"+id, {
+        const response = await fetch("http://localhost:3001/users/"+id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -97,7 +85,7 @@ export{updateUsers}
 
 async function deleteUser(id) {
     try {
-        const response = await fetch(`http://localhost:3000/users/${id}`, {
+        const response = await fetch(`http://localhost:3001/users/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
