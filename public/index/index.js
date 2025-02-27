@@ -1,11 +1,9 @@
-import { postUsers } from "./services/calls.js"
+import { postUsers } from "../services/calls.js"
 const user_Name=document.getElementById("user_Name")
 let password=document.getElementById("password")
 const send=document.getElementById("send")
 
 send.addEventListener("click",async(event)=>{
-    console.log("hola");
-    
     event.preventDefault()
     let usuario = {
         "user_Name": user_Name.value,
@@ -15,3 +13,4 @@ send.addEventListener("click",async(event)=>{
     await postUsers(usuario,"users")
 
 })
+

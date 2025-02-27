@@ -1,6 +1,6 @@
-async function getUsers() {
+async function getUsers(endpoint) {
     try {
-        const response = await fetch('http://localhost:3001/users', {
+        const response = await fetch(`http://localhost:3000/${endpoint}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
@@ -25,7 +25,7 @@ export { getUsers };
 
 async function postUsers(obj,endpoint) {
     try {
-        const response = await fetch(`http://localhost:3001/${endpoint}`, {
+        const response = await fetch(`http://localhost:3000/${endpoint}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ async function updateUsers(password, user_Name)
         
 
 
-        const response = await fetch("http://localhost:3001/users/"+id, {
+        const response = await fetch("http://localhost:3000/users/"+id, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -85,7 +85,7 @@ export{updateUsers}
 
 async function deleteUser(id) {
     try {
-        const response = await fetch(`http://localhost:3001/users/${id}`, {
+        const response = await fetch(`http://localhost:3000/users/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'

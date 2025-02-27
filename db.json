@@ -1,26 +1,117 @@
 {
   "users": [
     {
-      "id": "a6ff",
-      "user_Name": "elvis",
-      "password": "123",
-      "tipoUsuario": "admin"
+      "id": "c261",
+      "user_Name": "Jeank",
+      "password": "3738",
+      "Sede": "Alajuela",
+      "Edad": "21",
+      "rolUsuario": "estudiante"
     },
     {
-      "id": "1af6",
-      "user_Name": "Manuel",
-      "password": "1234",
-      "tipoUsuario": "estud"
+      "id": "f3bc",
+      "user_Name": "Andybellako",
+      "password": "pe",
+      "Sede": "Nicaragua",
+      "Edad": "47",
+      "rolUsuario": "estudiante"
     },
     {
-      "id": "135b",
-      "user_Name": "Paquita",
+      "id": "5194",
+      "user_Name": "Juan Diego",
+      "password": "1010",
+      "Sede": "San José",
+      "Edad": "20",
+      "rolUsuario": "estudiante"
+    },
+    {
+      "id": "2b88",
+      "user_Name": "Elvis Aguilar",
+      "password": "0805",
+      "Sede": "San José",
+      "Edad": "20",
+      "rolUsuario": "admin"
+    },
+    {
+      "id": "9d60",
+      "user_Name": "Cesar",
       "password": "1234",
-      "tipoUsuario": "estud"
+      "Sede": "Puntarenas",
+      "Edad": "20",
+      "rolUsuario": "estudiante"
+    },
+    {
+      "id": "7b0f",
+      "user_Name": "Kevin",
+      "password": "0909",
+      "Sede": "Desamparados",
+      "Edad": "20",
+      "rolUsuario": "estudiante"
+    },
+    {
+      "id": "c599",
+      "user_Name": "Kevin",
+      "password": "0909",
+      "Sede": "Desamparados",
+      "Edad": "20",
+      "rolUsuario": "estudiante"
+    },
+    {
+      "id": "d197",
+      "user_Name": "Kevin",
+      "password": "0909",
+      "Sede": "Desamparados",
+      "Edad": "20",
+      "rolUsuario": "estudiante"
+    },
+    {
+      "id": "560f",
+      "user_Name": "Kevin",
+      "password": "0909",
+      "Sede": "Desamparados",
+      "Edad": "20",
+      "rolUsuario": "estudiante"
+    },
+    {
+      "id": "628e",
+      "user_Name": "Kevin",
+      "password": "0909",
+      "Sede": "Desamparados",
+      "Edad": "20",
+      "rolUsuario": "estudiante"
     }
   ],
-  "pc":[
-    
+  "pc": [
+    {
+      "id": "3082",
+      "name": "RON",
+      "code": "2245",
+      "leaveDate": "2"
+    },
+    {
+      "id": "cf2f",
+      "code": "56007",
+      "leaveDate": "06/2/2025"
+    },
+    {
+      "id": "c7a9",
+      "code": "56007",
+      "leaveDate": "06/2/2025"
+    },
+    {
+      "id": "c14b",
+      "code": "56007",
+      "leaveDate": "q"
+    },
+    {
+      "id": "2ea2",
+      "code": "56007",
+      "leaveDate": "q"
+    },
+    {
+      "id": "e383",
+      "code": "864764874",
+      "leaveDate": "33333"
+    }
   ]
 }
-
