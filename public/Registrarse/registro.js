@@ -1,6 +1,4 @@
-
-import Swal from "sweetalert2";
-import { postUsers } from "../services/calls.js";
+import { postUsers, getUsers } from "../services/calls.js";
 
 const user_Name = document.getElementById("user_Name");
 const password = document.getElementById("password");
@@ -11,20 +9,30 @@ const send = document.getElementById("send");
 send.addEventListener("click", async (e) => {
     e.preventDefault();
 
-    let registrado = {
-        "user_Name": user_Name.value,
-        "password": password.value,
-        "Sede": Sede.value,
-        "Edad": edad.value,
-        "rolUsuario": "estudiante"
-    };
-    await postUsers(registrado, "users");
+    const usuarios = await getUsers("users");
+    let userExists = false;
 
+    usuarios.forEach(usuario => {
+        if (usuario.user_Name === user_Name.value) {
+            userExists = true;
+            Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "El nombre de usuario ya existe.",
+                footer: '<a href="#">¿Por qué tengo este problema?</a>'
+            });
+        }
+    });
 
-    if(user_Name.value===) {
-        
+    if (!userExists) {
+        let registrado = {
+            "user_Name": user_Name.value,
+            "password": password.value,
+            "Sede": Sede.value,
+            "Edad": edad.value,
+            "rolUsuario": "estudiante"
+        };
+        await postUsers(registrado, "users");
+        Swal.fire("Te has registrado");
     }
-    Swal.fire("Te has registrado");
-
-
-})
+});
