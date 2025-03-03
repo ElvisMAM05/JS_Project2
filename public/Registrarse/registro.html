@@ -8,15 +8,28 @@
 </head>
 <body>
 
+
+
+    <div class="background-container">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/moon2.png" alt="">
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+
     <div id="Login" class="Login">
+
+        
         <h2>Registro</h2>
         <br>
 
         <label class="input">Nombre completo:</label>
         <input id="user_Name" type="text" placeholder="Name" class="input">
+        
+        <label class="input">Correo:</label>
+        <input id="user_Email" type="email" placeholder="email" class="input">
 
         <label class="input">Contraseña:</label> 
-        <input id="password" type="text" placeholder="password"  class="input">
+        <input id="password" type="password" placeholder="password"  class="input">
 
         <label class="input">Edad:</label> 
         <input id="edad" type="text" placeholder="Years old"  class="input">
@@ -27,7 +40,9 @@
 
     <button id="send">Ingresar</button>
     </div>
+    </div>
     <script type="module" src="registro.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 </html>

@@ -83,11 +83,13 @@ body {
 
 h1 {
   position: absolute; /* Colocación absoluta */
-  top: 10px; /* Espacio desde la parte superior */
+  top: 1vh; /* Espacio desde la parte superior */
+  text-align: center;
   color: green;
   font-family: 'Share Tech Mono', 'Cascadia Code', Menlo, Monaco, 'Courier New', monospace;
-  font-size: 3rem; /* Tamaño más pequeño */
+  font-size: 7rem; /* Tamaño más pequeño */
   filter: drop-shadow(0px 0px 5px currentColor);
+  left: auto;
 }
 
 h1::after {
@@ -114,4 +116,19 @@ h1::after {
   100% {
     visibility: hidden;
   }
+}
+
+.Login{
+  position: absolute;
+  border-radius: 10px;
+  border: green solid 1px;
+  width: 400px;
+  height: 300px;
+  left: 300px;
+  padding: 5%;
+  color: green;
+  margin: auto;
+  margin-top: 25%;
+  margin-left: 10%;
+  bottom: 15vh;
 }
