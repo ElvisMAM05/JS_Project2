@@ -8,9 +8,11 @@ const Sede = document.getElementById("Sede");
 const send = document.getElementById("send");
 
 send.addEventListener("click", async (e) => {
+    console.log("Helo")
     e.preventDefault();
+    
 
-    const usuarios = await getUsers("users");
+    const usuarios = await  getUsers("users");
     let userExists = false;
 
     usuarios.forEach(usuario => {
@@ -59,7 +61,7 @@ send.addEventListener("click", async (e) => {
 
         
 
-       
+
     });
 
 
