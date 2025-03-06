@@ -24,6 +24,7 @@ send.addEventListener("click",async (e)=> {
 
             return
         } 
+        else{
                 if(usuario.user_Name !== user_Name.value && usuario.password !== password.value){
                     Swal.fire({
                         icon: 'error',
@@ -32,7 +33,7 @@ send.addEventListener("click",async (e)=> {
 
                     })
                     return
-                }
+                }}
         
     })
 })

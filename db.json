@@ -27,33 +27,7 @@
       "Edad": "15",
       "rolUsuario": "estudiante"
     },
-    {
-      "id": "8e56",
-      "user_Name": "Omar",
-      "user_Email": "qqq@gmal.com",
-      "password": "1234",
-      "Sede": "Puntarenas",
-      "Edad": "15",
-      "rolUsuario": "estudiante"
-    },
-    {
-      "id": "51b0",
-      "user_Name": "Diana",
-      "user_Email": "di@gmail.com",
-      "password": "1212",
-      "Sede": "San José",
-      "Edad": "15",
-      "rolUsuario": "estudiante"
-    },
-    {
-      "id": "fb0f",
-      "user_Name": "Diana",
-      "user_Email": "di@gmail.com",
-      "password": "1212",
-      "Sede": "San José",
-      "Edad": "15",
-      "rolUsuario": "estudiante"
-    },
+    
     {
       "id": "cc89",
       "user_Name": "Diana",
@@ -62,65 +36,16 @@
       "Sede": "San José",
       "Edad": "15",
       "rolUsuario": "estudiante"
-    },
-    {
-      "id": "e55c",
-      "user_Name": "Diana",
-      "user_Email": "di@gmail.com",
-      "password": "1212",
-      "Sede": "San José",
-      "Edad": "15",
-      "rolUsuario": "estudiante"
     }
+
   ],
+  
   "pc": [
     {
       "id": "b17c",
       "nombre": "Elvisa",
       "code": "28292",
       "leaveDate": "2025-03-05",
-      "Sede": "Chepe"
-    },
-    {
-      "id": "6d42",
-      "nombre": "Diana",
-      "code": "8398329328",
-      "leaveDate": "2025-03-04",
-      "Sede": "San José"
-    },
-    {
-      "id": "910c",
-      "nombre": "Diana",
-      "code": "384739849",
-      "leaveDate": "2025-02-05",
-      "Sede": "San José"
-    },
-    {
-      "id": "9524",
-      "nombre": "Diana",
-      "code": "222",
-      "leaveDate": "2025-01-16",
-      "Sede": "San José"
-    },
-    {
-      "id": "180c",
-      "nombre": "Diana",
-      "code": "222",
-      "leaveDate": "2025-01-16",
-      "Sede": "San José"
-    },
-    {
-      "id": "a36f",
-      "nombre": "Diana",
-      "code": "222",
-      "leaveDate": "2025-01-16",
-      "Sede": "San José"
-    },
-    {
-      "id": "a2f8",
-      "nombre": "Elvisa",
-      "code": "2930'9'34",
-      "leaveDate": "2024-11-07",
       "Sede": "Chepe"
     }
   ]

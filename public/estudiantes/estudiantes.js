@@ -14,11 +14,27 @@ estudianteNombre.textContent= name +"/"+ sede;
 
 outB.addEventListener("click", async function (a) {
 
+    if (!code.value || !leaveDate.value){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Por favor llena todos los campos',
+        });
+        return;
+    }
+
+else{
+let usuarios = await getUsers("pc");
+
+    if(code.value==code){}
 
     const { value: accept } = await Swal.fire({
         title: "Terminos y condiciones",
         input: "checkbox",
         inputValue: 1,
+
+        
         text: `
           Si viajas en transporte público, debes resguardar tu equipo en tu bolso personal, no exponerlo.
           Si llevas el equipo, procura ir acompañado.
@@ -49,4 +65,9 @@ outB.addEventListener("click", async function (a) {
     
 
     await postUsers(Dates, "pc");
+}
+
+
+
+
 });

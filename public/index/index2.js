@@ -1,2 +1,3 @@
 console.clear();
+
 Splitting();
