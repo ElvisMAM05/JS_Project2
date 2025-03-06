@@ -9,7 +9,8 @@ send.addEventListener("click",async (e)=> {
     e.preventDefault()
     const usuarios = await getUsers("users")
     usuarios.forEach(usuario=>{
-        if (usuario.User_Name === user_Name.value && usuario.password === password.value && usuario.rolUsuario === "estudiante") {
+
+        if (usuario.user_Name === user_Name.value && usuario.password === password.value && usuario.rolUsuario === "estudiante") {
             
             window.location.href = "/estudiantes/estudiantes.html"
             localStorage.setItem("nombreUsuario",usuario.user_Name)
@@ -22,6 +23,16 @@ send.addEventListener("click",async (e)=> {
             window.location.href = "/administradores/admin.html"
 
             return
-        }
+        } 
+                if(usuario.user_Name !== user_Name.value && usuario.password !== password.value){
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: 'Usuario o contraseña incorrectos',
+
+                    })
+                    return
+                }
+        
     })
 })
